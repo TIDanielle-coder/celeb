@@ -4,10 +4,94 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+   <title>Michael Blaustein | Official Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header id="navbar">
+        <div class="nav-container">
+            <div class="logo">MB</div>
+            <nav>
+                <a href="#home">HOME</a>
+                <a href="#shows">SHOWS</a>
+                <a href="#vip">VIP</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="reveal">MICHAEL BLAUSTEIN</h1>
+            <p class="fade-in">2026 WORLD TOUR</p>
+            <a href="#shows" class="btn-main">GET TICKETS</a>
+        </div>
+    </section>
+
+    <section id="shows" class="tour-section">
+        <h2 class="section-title">TOUR DATES</h2>
+        <div class="tour-container">
+            <div class="tour-row animate-on-scroll">
+                <div class="tour-date">FEB 12-15</div>
+                <div class="tour-info">
+                    <strong>IMPROV COMEDY CLUB</strong>
+                    <span>ONTARIO, CA</span>
+                </div>
+                <div class="tour-status low">LOW TICKETS</div>
+                <a href="#" class="btn-ticket">TICKETS</a>
+            </div>
+            <div class="tour-row animate-on-scroll">
+                <div class="tour-date">MAR 11</div>
+                <div class="tour-info">
+                    <strong>MCCALLUM THEATRE</strong>
+                    <span>PALM DESERT, CA</span>
+                </div>
+                <div class="tour-status">ON SALE</div>
+                <a href="#" class="btn-ticket">TICKETS</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="vip" class="vip-section">
+        <div class="glass-card animate-on-scroll">
+            <i class="fas fa-gem icon-vip"></i>
+            <h2>VIP PERSONAL ACCESS</h2>
+            <p>Direct updates & personal contact line access.</p>
+            <div class="price">$19.99</div>
+            
+            <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+            <stripe-buy-button buy-button-id="YOUR_STRIPE_ID" publishable-key="YOUR_STRIPE_PK"></stripe-buy-button>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="booking-wrapper animate-on-scroll">
+            <h2>BOOKING INQUIRY</h2>
+            <form id="booking-form" action="https://formspree.io/f/YOUR_ID" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" id="name" placeholder="FULL NAME" required>
+                    <span class="error-msg">Name is required</span>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="email" placeholder="EMAIL ADDRESS" required>
+                    <span class="error-msg">Valid email is required</span>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" id="message" rows="5" placeholder="EVENT DETAILS / MESSAGE" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">SUBMIT INQUIRY</button>
+            </form>
+            <div id="form-success" class="hidden">Message sent successfully!</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MICHAEL BLAUSTEIN. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
