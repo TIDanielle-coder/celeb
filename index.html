@@ -16,14 +16,20 @@
             <div class="logo">MB</div>
             <nav>
                 <a href="#home">HOME</a>
-                <a href="#shows">SHOWS</a>
-                <a href="#vip">VIP</a>
-                <a href="#contact">CONTACT</a>
+                <a href="#shows">TOUR</a>
+                <a href="#packages">PACKAGES</a>
+                <a href="#bookings">BOOKINGS</a>
+                <a href="#contact" class="btn-contact">CONTACT</a>
             </nav>
         </div>
     </header>
 
     <section id="home" class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.mp4" type="video/mp4">
+            <source src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.webm" type="video/webm">
+        </video>
+        <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1 class="reveal">MICHAEL BLAUSTEIN</h1>
             <p class="fade-in">2026 WORLD TOUR</p>
@@ -32,64 +38,274 @@
     </section>
 
     <section id="shows" class="tour-section">
-        <h2 class="section-title">TOUR DATES</h2>
+        <h2 class="section-title">2026 TOUR DATES</h2>
         <div class="tour-container">
             <div class="tour-row animate-on-scroll">
                 <div class="tour-date">FEB 12-15</div>
                 <div class="tour-info">
                     <strong>IMPROV COMEDY CLUB</strong>
                     <span>ONTARIO, CA</span>
+                    <span class="time">8:00 PM & 10:00 PM</span>
                 </div>
-                <div class="tour-status low">LOW TICKETS</div>
-                <a href="#" class="btn-ticket">TICKETS</a>
+                <div class="tour-status sold-out">SOLD OUT</div>
+                <a href="#bookings" class="btn-ticket">BOOK</a>
             </div>
             <div class="tour-row animate-on-scroll">
-                <div class="tour-date">MAR 11</div>
+                <div class="tour-date">MAR 11-12</div>
                 <div class="tour-info">
                     <strong>MCCALLUM THEATRE</strong>
                     <span>PALM DESERT, CA</span>
+                    <span class="time">7:30 PM</span>
                 </div>
                 <div class="tour-status">ON SALE</div>
-                <a href="#" class="btn-ticket">TICKETS</a>
+                <a href="#packages" class="btn-ticket">GET TICKETS</a>
+            </div>
+            <div class="tour-row animate-on-scroll">
+                <div class="tour-date">APR 8-10</div>
+                <div class="tour-info">
+                    <strong>THE COMEDY STORE</strong>
+                    <span>LOS ANGELES, CA</span>
+                    <span class="time">9:00 PM & 11:00 PM</span>
+                </div>
+                <div class="tour-status low">2 TICKETS LEFT</div>
+                <a href="#packages" class="btn-ticket">GET TICKETS</a>
+            </div>
+            <div class="tour-row animate-on-scroll">
+                <div class="tour-date">MAY 1-2</div>
+                <div class="tour-info">
+                    <strong>LAUGH FACTORY</strong>
+                    <span>HOLLYWOOD, CA</span>
+                    <span class="time">8:00 PM & 10:00 PM</span>
+                </div>
+                <div class="tour-status">ON SALE</div>
+                <a href="#packages" class="btn-ticket">GET TICKETS</a>
+            </div>
+            <div class="tour-row animate-on-scroll">
+                <div class="tour-date">JUN 5-7</div>
+                <div class="tour-info">
+                    <strong>PUNCH LINE SAN FRANCISCO</strong>
+                    <span>SAN FRANCISCO, CA</span>
+                    <span class="time">8:00 PM & 10:00 PM</span>
+                </div>
+                <div class="tour-status">ON SALE</div>
+                <a href="#packages" class="btn-ticket">GET TICKETS</a>
+            </div>
+            <div class="tour-row animate-on-scroll">
+                <div class="tour-date">JUL 15-18</div>
+                <div class="tour-info">
+                    <strong>BELLAGIO RESORT & CASINO</strong>
+                    <span>LAS VEGAS, NV</span>
+                    <span class="time">8:30 PM & 10:30 PM</span>
+                </div>
+                <div class="tour-status">ON SALE</div>
+                <a href="#packages" class="btn-ticket">GET TICKETS</a>
             </div>
         </div>
     </section>
 
-    <section id="vip" class="vip-section">
-        <div class="glass-card animate-on-scroll">
-            <i class="fas fa-gem icon-vip"></i>
-            <h2>VIP PERSONAL ACCESS</h2>
-            <p>Direct updates & personal contact line access.</p>
-            <div class="price">$19.99</div>
-            
-            <script async src="https://js.stripe.com/v3/buy-button.js"></script>
-            <stripe-buy-button buy-button-id="YOUR_STRIPE_ID" publishable-key="YOUR_STRIPE_PK"></stripe-buy-button>
+    <section id="packages" class="packages-section">
+        <h2 class="section-title">VIP PACKAGES</h2>
+        <p class="section-subtitle">Choose Your Experience</p>
+        <div class="packages-grid animate-on-scroll">
+            <div class="package-card standard">
+                <div class="package-header">
+                    <i class="fas fa-ticket-alt"></i>
+                    <h3>STANDARD</h3>
+                </div>
+                <div class="price-tag">$1,200.00</div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Premium Seating</li>
+                    <li><i class="fas fa-check"></i> Digital Ticket</li>
+                    <li><i class="fas fa-check"></i> Event Program</li>
+                    <li><i class="fas fa-times"></i> Meet & Greet</li>
+                    <li><i class="fas fa-times"></i> Exclusive Merchandise</li>
+                </ul>
+                <a href="#bookings" class="btn-package">SELECT PACKAGE</a>
+            </div>
+
+            <div class="package-card vip">
+                <div class="badge">MOST POPULAR</div>
+                <div class="package-header">
+                    <i class="fas fa-crown"></i>
+                    <h3>VIP</h3>
+                </div>
+                <div class="price-tag">$1,800.00</div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> VIP Seating (Front Row)</li>
+                    <li><i class="fas fa-check"></i> Digital Ticket</li>
+                    <li><i class="fas fa-check"></i> Event Program</li>
+                    <li><i class="fas fa-check"></i> Meet & Greet (15 min)</li>
+                    <li><i class="fas fa-check"></i> Signed Merchandise</li>
+                </ul>
+                <a href="#bookings" class="btn-package">SELECT PACKAGE</a>
+            </div>
+
+            <div class="package-card vvip">
+                <div class="badge">ELITE</div>
+                <div class="package-header">
+                    <i class="fas fa-gem"></i>
+                    <h3>VVIP</h3>
+                </div>
+                <div class="price-tag">$2,500.00</div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Premium VIP Seating</li>
+                    <li><i class="fas fa-check"></i> Exclusive Lounge Access</li>
+                    <li><i class="fas fa-check"></i> Event Program</li>
+                    <li><i class="fas fa-check"></i> Private Meet & Greet (30 min)</li>
+                    <li><i class="fas fa-check"></i> Exclusive Merchandise Pack</li>
+                </ul>
+                <a href="#bookings" class="btn-package">SELECT PACKAGE</a>
+            </div>
+
+            <div class="package-card premium">
+                <div class="badge">ULTIMATE</div>
+                <div class="package-header">
+                    <i class="fas fa-star"></i>
+                    <h3>PREMIUM</h3>
+                </div>
+                <div class="price-tag">$3,000.00</div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Front & Center Seating</li>
+                    <li><i class="fas fa-check"></i> VIP Lounge (All Access)</li>
+                    <li><i class="fas fa-check"></i> Premium Event Program</li>
+                    <li><i class="fas fa-check"></i> Private Meet & Greet (45 min)</li>
+                    <li><i class="fas fa-check"></i> Ultimate Merchandise Bundle</li>
+                </ul>
+                <a href="#bookings" class="btn-package">SELECT PACKAGE</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="bookings" class="bookings-section">
+        <h2 class="section-title">PRIVATE BOOKINGS</h2>
+        <p class="section-subtitle">Book Michael for Your Private Event</p>
+        <div class="bookings-wrapper animate-on-scroll">
+            <form id="booking-form">
+                <div class="form-columns">
+                    <div class="column">
+                        <div class="form-group">
+                            <label for="event-name">Event Name</label>
+                            <input type="text" name="event-name" id="event-name" placeholder="Your Event Name" required>
+                            <span class="error-msg">Event name is required</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-name">Full Name</label>
+                            <input type="text" name="contact-name" id="contact-name" placeholder="Your Full Name" required>
+                            <span class="error-msg">Full name is required</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" name="email" id="email" placeholder="your@email.com" required>
+                            <span class="error-msg">Valid email is required</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" name="phone" id="phone" placeholder="(123) 456-7890" required>
+                            <span class="error-msg">Phone number is required</span>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="form-group">
+                            <label for="event-date">Event Date</label>
+                            <input type="date" name="event-date" id="event-date" required>
+                            <span class="error-msg">Event date is required</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="event-location">Location</label>
+                            <input type="text" name="event-location" id="event-location" placeholder="City, State" required>
+                            <span class="error-msg">Location is required</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="package-type">Booking Package</label>
+                            <select name="package-type" id="package-type" required>
+                                <option value="">Select a package...</option>
+                                <option value="standard">Standard - $2,000.00</option>
+                                <option value="vip">VIP - $4,500.00</option>
+                                <option value="vvip">VVIP - $7,000.00</option>
+                                <option value="premium">Premium - $10,000.00</option>
+                            </select>
+                            <span class="error-msg">Package selection is required</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guest-count">Expected Guest Count</label>
+                            <input type="number" name="guest-count" id="guest-count" placeholder="Number of guests" min="1" required>
+                            <span class="error-msg">Guest count is required</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="event-details">Event Details / Special Requests</label>
+                    <textarea name="event-details" id="event-details" rows="5" placeholder="Tell us more about your event and any special requirements..." required></textarea>
+                    <span class="error-msg">Event details are required</span>
+                </div>
+
+                <div class="quote-summary">
+                    <h4>Estimated Quote</h4>
+                    <div class="quote-line">
+                        <span>Booking Package:</span>
+                        <span id="quote-package">Select a package</span>
+                    </div>
+                    <div class="quote-line">
+                        <span>Price:</span>
+                        <span id="quote-price">$0.00</span>
+                    </div>
+                    <div class="quote-line total">
+                        <span>TOTAL:</span>
+                        <span id="quote-total">$0.00</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit">GET BOOKING QUOTE</button>
+            </form>
+            <div id="form-success" class="success-message hidden">
+                <i class="fas fa-check-circle"></i>
+                <h3>Quote Request Sent!</h3>
+                <p>We'll review your booking request and get back to you within 24 hours.</p>
+            </div>
         </div>
     </section>
 
     <section id="contact" class="contact-section">
-        <div class="booking-wrapper animate-on-scroll">
-            <h2>BOOKING INQUIRY</h2>
-            <form id="booking-form" action="https://formspree.io/f/YOUR_ID" method="POST">
-                <div class="form-group">
-                    <input type="text" name="name" id="name" placeholder="FULL NAME" required>
-                    <span class="error-msg">Name is required</span>
+        <div class="contact-wrapper animate-on-scroll">
+            <h2 class="section-title">GET IN TOUCH</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>EMAIL</h3>
+                        <p><a href="mailto:booking@michaelblaustein.com">booking@michaelblaustein.com</a></p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>PHONE</h3>
+                        <p><a href="tel:+1234567890">(123) 456-7890</a></p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>OFFICE</h3>
+                        <p>Los Angeles, CA</p>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="email" name="email" id="email" placeholder="EMAIL ADDRESS" required>
-                    <span class="error-msg">Valid email is required</span>
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://youtube.com" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
                 </div>
-                <div class="form-group">
-                    <textarea name="message" id="message" rows="5" placeholder="EVENT DETAILS / MESSAGE" required></textarea>
-                </div>
-                <button type="submit" class="btn-submit">SUBMIT INQUIRY</button>
-            </form>
-            <div id="form-success" class="hidden">Message sent successfully!</div>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 MICHAEL BLAUSTEIN. ALL RIGHTS RESERVED.</p>
+        <p>&copy; 2026 MICHAEL BLAUSTEIN. ALL RIGHTS RESERVED. | DESIGNED FOR EXCELLENCE</p>
     </footer>
 
     <script src="script.js"></script>
